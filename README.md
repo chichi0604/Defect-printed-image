@@ -1,4 +1,3 @@
-Printed Defect Inspection – Classification & (Optional) Siamese Localization
 
 ---
 
