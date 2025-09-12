@@ -10,16 +10,10 @@ This project provides:
 * A minimal **desktop GUI** for quick checks.
 * **Synthetic data generation** and **augmentation** utilities to build training sets.
 
-Key ideas implemented in code:
-
-* **Domain-partitioned evaluation** (appearance-cluster split) to reduce leakage.
-* **Class rebalancing** via sampling/weights.
-* **Label smoothing** for better calibration.
-* **TTA (hflip)** at test time.
 
 ---
 
-## Repo Structure (example)
+## Structure
 
 ```
 .
