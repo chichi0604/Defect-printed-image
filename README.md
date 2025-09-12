@@ -1,7 +1,5 @@
 Printed Defect Inspection – Classification & (Optional) Siamese Localization
 
-> Drop-in README you can adapt after you paste your repo. All paths/flags are examples—replace with your actual ones.
-
 ---
 
 ## Overview
@@ -11,7 +9,6 @@ This project provides:
 * **Image-level classification** of seven print defects: `banding`, `blur`, `color-shift`, `dropout`, `ghosting`, `misregistration`, `scratch`.
 * A minimal **desktop GUI** for quick checks.
 * **Synthetic data generation** and **augmentation** utilities to build training sets.
-* (Optional) hooks for a **Siamese (gold vs. test) localization + multi-label** model if you later switch from pure classification.
 
 Key ideas implemented in code:
 
@@ -26,25 +23,23 @@ Key ideas implemented in code:
 
 ```
 .
-├─ model9/                     # core classifier package
-│  ├─ __init__.py
+├─ model/                      # core classifier package
 │  ├─ model.py                 # Net
 │  ├─ dataset.py               # DefectDataset, CLASS_NAMES
 │  ├─ preprocess.py            # I/O + transforms
 │  ├─ train.py                 # training entry
-│  ├─ test.py                  # batched inference
+│  ├─ train_type.py            # training different models
 │  └─ print_matrice.py         # confusion matrix / report
 │
 ├─ GUI/
-│  └─ gui_check.py             # desktop GUI (Tkinter + optional Pillow)
+│  └─ gui.py                   # desktop GUI (Tkinter + optional Pillow)
 │
-├─ synth/                      # (optional) data generation utilities
+├─ generate_defect/                      # (optional) data generation utilities
 │  ├─ generate.py              # orchestration (7 classes)
 │  ├─ banding.py  ...          # per-defect synthesizers
-│  └─ augment_print_env.py     # common augmentations
+│  └─ generate_aug.py          # common augmentations
 │
-├─ dataset/                    # your actual data lives elsewhere; keep small samples here
-├─ requirements.txt
+├─ dataset/                    
 └─ README.md
 ```
 
