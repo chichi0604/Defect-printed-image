@@ -1,0 +1,7 @@
+banding
+blur
+color-shift
+dropout
+ghosting
+misregistration
+scratch

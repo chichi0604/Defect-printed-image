@@ -1,0 +1,8 @@
+,banding,blur,color-shift,dropout,ghosting,misregistration,scratch
+banding,300,0,0,0,0,0,0
+blur,0,262,10,0,28,0,0
+color-shift,0,14,150,0,59,8,69
+dropout,0,0,0,300,0,0,0
+ghosting,0,10,0,0,290,0,0
+misregistration,0,26,1,0,136,137,0
+scratch,0,0,15,0,0,0,285
